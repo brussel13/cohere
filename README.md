@@ -1,3 +1,5 @@
+A library for coherent diffraction imaging phase retrieval.
+
 [![Documentation Status](https://readthedocs.org/projects/cohere/badge/?version=latest)](http://cohere.readthedocs.io/en/latest/?badge=latest)
 
 Project home page: https://cohere.readthedocs.io/
