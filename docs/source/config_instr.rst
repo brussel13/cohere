@@ -51,19 +51,21 @@ Parsed parameters
     detdist = 500.0
 
 - theta:
-| angular step size
+| Start position of Theta motor prior to a scan.
 | example:
 ::
 
     theta = 0.1999946
 
 - chi:
+| Start position of Chi motor prior to a scan.
 | example:
 ::
 
     chi = 90.0
 
 - phi:
+| Start position of Phi motor prior to a scan.
 | example:
 ::
 
