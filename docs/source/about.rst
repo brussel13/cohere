@@ -2,7 +2,11 @@
 About
 =====
 
-The cohere package provides tools for reconstruction of image of a nanoscale structures from data obtained using Bragg Coherent Diffraction Imaging technique.
+The Cohere package provides tools for phase retrieval of coherent diffraction data to images. It has been developed in the context of Bragg Coherent Diffraction Imaging (BCDI) with a focus on 3D data from rocking curve and energy scan coherent diffraction data of small crystalline objects. While application to 2D and 1D data is not gauranteed to work, there is intention to support such data as well and bugs will be squashed as they are found.
+
+Cohere is divided into four packages.  The cohere_core is the computational API.  All of the operations of the processing workflow are defined in cohere_core and the execution of a defined phase retrieval workflow is done. A leading feature of cohere_core is that the algorithm codes are developed using an abstraction layer above specific computaional toolkits. This allows the computaional library to be defined at run-time.  Adding a new library to cohere_core is done by defining the interface functions for cohere_core in the library.  Currently cohere_core supports numpy, cupy (nvidia GPU) and PyTorch (CPU/GPU). The cohere_core source code is contained within the cohere git repository. 
+
+The user interface to cohere_core is defined in the cohere_ui package.  Cohere_ui defines the four basic operations of a complete, end-to-end, coherent diffraction phase retrieval workflow.  The beamline specific preprocessing steps are done on the raw data using the beamline_preprocess program.  Generic data preprocessing operations are executed in the standard_preprocessing program.  Phase retrieval is executed with run_reconstruction and 3D visualization is managed by the beamline specific beamline_vizualization program.  Each of these is available as a stand alone program or the can be configured and executed through the provided GUI.  
 
 The reconstruction has very good performance, in particular when utilizing GPU. User has a choice to run on cpu or GPU by choosing the processing library. 
 The solution offers parallel processing for fast reconstruction of multiple starting points.
