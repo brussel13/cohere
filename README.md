@@ -18,8 +18,8 @@ Important features:
 A trained model must be provided when using this feature. User can download trained model by clicking the following link
 https://g-29c18.fd635.8443.data.globus.org/cherukara/cohere-trained_model.hdf5
 - AutoAlien1 algorithm - a method to remove aliens by automatic means during standard data preprocessing. Based on work "Removal of spurious data in Bragg coherent diffraction imaging: an algorithm for automated data preprocessing" by Kenley Pelzer et. al.
-- Multipeak - support for an experiment where data is collected for adjacent peaks simultaneously and reconstructing this multipeak scenario. The research is in experimental stage. Implemented by Jason (Nick) Porter.
-- chrono CDI - allows the oversampling requirement at each time step to be reduced. The increased time resolution will allow imaging of faster dynamics and of radiation-dose-sensitive samples. Based on work "Coherent diffractive imaging of time-evolving samples with improved temporal resolution" by A. Ulvestat et. al.
+- Multipeak - support for an experiment where data is collected for multiple Bragg peaks of a given crystal. The algorithm simultaneously reconstructs the datasets to produce an image of the crystal and full vector field describing the distortion. The research is in experimental stage. Implemented by Jason (Nick) Porter.
+- chrono CDI - allows the oversampling requirement at each time step to be reduced. The increased time resolution afforded by shorter scans will allow imaging of faster dynamics and of radiation-dose-sensitive samples. Based on work "Coherent diffractive imaging of time-evolving samples with improved temporal resolution" by A. Ulvestat et. al.
 
 
 Author(s)
