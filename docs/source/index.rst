@@ -7,13 +7,13 @@ Welcome to cohere documentation!
 
    about
    installation
+   cohere_experiment
+   api_cohere_ui
+   configuration
    define_alg_seq
    api_standard_preprocess
    api_phasing
    api_utils
-   api_cohere_ui
-   configuration
-   cohere_experiment
    for_developers
 
 Indices and tables
