@@ -1,6 +1,9 @@
 =================
 Cohere Experiment
 =================
+| Cohere_ui manages inputs and outputs in a fixed directory structure.  This is called a cohere experiment and reflects the context of data being acquired during an experiment at a beamline.  This directory structure is created and processed within a working directory, where multiple cohere experiments are stored and processed in their own subdirectories.  
+| Most cohere_beamlines implementations support multiple ways to work with the data acquired during an experiment at the beamline. An example is 34-ID-C at APS.  There measurements were typically repeated on a given crystal with a roughly 20 minute period.  An experimenter could choose to treat all of those measurments separately and phase them a individual datasets, or combine them together, either in total or in groups, summing the data sets together to improve the signal and phasing them as integrated datasets.  
+The cohere experim
 | The experiment executed at the beamline concludes in a collection of data files and metadata for many scans. It is typical that a number of scans are selected and grouped together for analysis. The analysis of selected scans constitute of cohere experiment.
 | In order to group the files associated with an cohere experiment in a structured manner user scripts will create a dedicated space. The space, cohere experiment directory, will be a sub-directory in working directory. The name of cohere experiment directory is descriptive as it contains an ID and scan ranges, for example: with experiment ID of "ABC", and scan "56-78", the experiment directory is ABC_56-78.
 | Cohere experiment can be configured for different cases. User can request to run the process separately for each scan, or scan range. User can also set the experiment to multipeak. Refer to :ref:`config_main` for description of configuration parameters that set a cohere experiment.
